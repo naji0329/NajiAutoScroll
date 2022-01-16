@@ -1,0 +1,21 @@
+{
+  "name": "NAJIAutoScroll",
+  "version": "1.0",
+  "description": "Autoscrolling for the NAJI!",
+  "permissions": ["activeTab", "declarativeContent", "storage", "webNavigation", "*://*/*"],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": { "scripts": ["background.js"] },
+  "icons": {
+      "128": "images/scroll.png",
+      "48": "images/scroll copy.png"
+  },
+  "manifest_version": 2
+}
